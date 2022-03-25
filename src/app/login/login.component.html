@@ -1,0 +1,28 @@
+<div class="login-panel">
+    <form class="form-group" [formGroup]="loginForm" (ngSubmit)="loginUser()" autocomplete="off">
+        <div class="mb-3">
+            <mat-form-field>
+                <mat-label for="exampleInputEmail1" class="form-label">Email address</mat-label>
+                <input matInput type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Ex- abc@xyz.com" formControlName="email">
+                <mat-error *ngIf="email?.errors?.['required']">Email is required</mat-error>
+                <mat-error *ngIf="email?.errors?.['email']">Please enter a valid email</mat-error>
+            </mat-form-field>
+
+        </div>
+        <div class="mb-3">
+            <mat-form-field>
+                <mat-label for="exampleInputPassword1" class="form-label">Password</mat-label>
+                <input matInput type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                formControlName="password">
+                <mat-error *ngIf="password?.errors?.['required']">Password is required</mat-error>
+            </mat-form-field>
+
+        </div>
+
+        <button mat-button type="button" class="btn btn-primary loginbtn" type="submit">Log in</button><br><br>
+        <button class="btn btn-primary" (click)="login()">Login with Google</button><br><br>
+        <a routerLink="/signup">Not a user? Sign up.</a>
+    </form>
+</div>
+<!-- <button (click)="login()" class="btn btn-primary">Login with google</button> -->

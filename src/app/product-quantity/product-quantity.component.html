@@ -1,0 +1,11 @@
+<div class="quantity-div">
+    <div>
+        <button class="btn w-100" (click)="removeFromCart()">-</button>
+    </div>
+    <div class="col ">
+        {{cart.getQuantity(product)}}
+    </div>
+    <div>
+        <button (click)="addToCart()" class="btn w-100">+</button>
+    </div>
+</div>

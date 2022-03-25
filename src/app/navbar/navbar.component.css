@@ -1,0 +1,8 @@
+.dropdown-toggle{
+    cursor: pointer;
+}
+.cart{
+    position: absolute;
+    right: 40px;
+    color: aliceblue;
+}

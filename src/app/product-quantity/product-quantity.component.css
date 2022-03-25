@@ -1,0 +1,16 @@
+.quantity-div{
+    display: flex;
+    flex-direction: row;
+    background-color: #81B214;
+}
+.col{
+    padding-top: 5%;
+    text-align: center;
+    background-color: #81B214;
+    color: white;
+    
+}
+.btn{
+    background-color: #81B214;
+    color:white;
+}

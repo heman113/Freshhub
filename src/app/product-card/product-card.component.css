@@ -1,0 +1,16 @@
+
+.grid{
+    margin: 20px 30px;
+}
+.card{
+    width: 11rem;
+    margin: 10px;
+}
+.card-footer{
+    padding: 0;
+}
+.btn{
+    background-color: #81B214;
+    color:white;
+}
+

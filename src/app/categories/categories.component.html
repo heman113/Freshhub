@@ -1,0 +1,19 @@
+<h1 id="cath1">Categories</h1>
+<div class="category-div">
+    
+    <div *ngFor="let c of categories$ | async" class="item">
+        <a [routerLink]="['/categories/']" [queryParams]="{category: c.key}" [class.active]="category === c.key">
+            <div class="item-img"><img class="item-img" src="{{c.imageUrl}}" alt=""></div>
+            <div class="item-des">{{c.name}}</div>
+            
+        </a>
+    </div>
+</div>
+<br><br>
+<div class="products-div" *ngIf="cart$ | async as cart">
+    
+    <div class="grid" *ngFor="let p of filteredProducts">
+        <product-card [product] = 'p' [cart]="cart"></product-card>
+    </div>
+    
+</div>

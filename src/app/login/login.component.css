@@ -1,3 +1,7 @@
-.loginbtn{
-    background-color: black;
-}
+.gradient-custom {
+   
+    background: linear-gradient(to right, rgba(132, 247, 151, 0.726), rgba(119, 192, 112, 0.596))
+  }
+  *{
+      color: white;
+  }

@@ -34,6 +34,9 @@ import {DataTablesModule} from 'angular-datatables';
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductQuantityComponent } from './product-quantity/product-quantity.component';
+import { ShippingFormComponent } from './shipping-form/shipping-form.component';
+import { CartSummaryComponent } from './cart-summary/cart-summary.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +55,9 @@ import { ProductQuantityComponent } from './product-quantity/product-quantity.co
     CategoriesComponent,
     ProductCardComponent,
     ProductQuantityComponent,
+    ShippingFormComponent,
+    CartSummaryComponent,
+    FooterComponent,
     
   ],
   imports: [
@@ -70,6 +76,7 @@ import { ProductQuantityComponent } from './product-quantity/product-quantity.co
       {path:'categories',component:CategoriesComponent},
       {path:'signup',component:SignupComponent},
       {path:'checkout',component:CheckOutComponent, canActivate:[AuthGuardService]},
+      {path:'shippingform',component:CheckOutComponent, canActivate:[AuthGuardService]},
       {path:'ordersuccess',component:OrderSuccessComponent, canActivate:[AuthGuardService]},
       {path:'myorders',component:MyOrdersComponent, canActivate:[AuthGuardService]},
       {path:'admin/products',component:AdminProductsComponent, canActivate:[AuthGuardService]},

@@ -1,8 +1,12 @@
+*{
+    font-family: 'Heebo', sans-serif;
+}
 #cath1{
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
     font-size: 5rem;
     color: white;
-    padding: 30px 30px;
+    padding: 50px 30px;
     background-color: #81B214;
     margin-bottom: 0px;
 }
@@ -17,7 +21,7 @@
 .item{
     padding: 20px 30px;
     text-align: center;
-    width: auto;
+    width: 20%;
     
 }
 /*.item-img-div{
@@ -26,8 +30,8 @@
 }*/
 .item-img{
     float: left;
-    width:  150px;
-    height: 150px;
+    width:  195px;
+    height: 195px;
     object-fit: cover;
     border-radius: 100%;
 }

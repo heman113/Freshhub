@@ -43,6 +43,11 @@ export class CartService {
     return this.db.object('/carts/' + cartId + '/items/' + productId);
   }
 
+  async removeItem(item: Product) {
+    let cartId = await this.getOrCreateCartId();
+    this.db.object('/shopping-carts/' + cartId + '/items/' + item.key).remove();
+  }
+
   
 
   private async getOrCreateCartId(): Promise<any> {

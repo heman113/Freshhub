@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-order-success',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderSuccessComponent implements OnInit {
 
-  constructor() { }
+  constructor(route: Router) { 
+    setTimeout(() => {
+      route.navigate(['/'])
+    }, 5000 )
+  }
 
   ngOnInit(): void {
   }

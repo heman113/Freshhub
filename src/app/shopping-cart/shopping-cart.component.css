@@ -1,0 +1,13 @@
+.btn{
+    background-color: #81B214;
+    color: white;
+}
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-size: cover;
+}
+.center{
+    margin: 40px;
+}

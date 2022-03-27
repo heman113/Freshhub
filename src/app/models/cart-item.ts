@@ -8,6 +8,7 @@ export class CartItem {
   imageUrl: string;
   price: number;
   quantity: number;
+  category: string;
   
   constructor(init?: Partial<CartItem>) {
     Object.assign(this, init);
